@@ -37,7 +37,7 @@ class EventToDisk():
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
-    print app.current_request.method
+    print(app.current_request.method)
     if app.current_request.method == 'POST':
         data = app.current_request.raw_body
         e = EventToDisk()
